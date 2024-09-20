@@ -1,0 +1,5 @@
+This unit does not do anything useful, other than demonstrating managing local and upstream changes.
+
+function CoolStuff (int amountofcool)
+if amountofcool > 100 
+  write "waay too cool for me"
