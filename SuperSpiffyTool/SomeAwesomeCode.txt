@@ -1,5 +1,9 @@
 This unit does not do anything useful, other than demonstrating managing local and upstream changes.
 
 function CoolStuff (int amountofcool)
-if amountofcool > 100 
+if amountofcool > 500 
   write "waay too cool for me"
+
+function SuperNewAwesomeFeatureWeNeed (bool OhBoy)
+  We want this.... gimme gimme
+  
