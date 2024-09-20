@@ -4,7 +4,7 @@ and preservation of upstream fixes
 etc
 ad infinitum
 
-also, lost of speeling errors.. some will be corrected local and other in upstram, lets see how that works.
+also, lost of spelling errors.. some will be corrected local and others in upstram, lets see how that works.
 
 So... you found this great library from Bob The Vendor, the language you use doesn't support inheritance well or for some other reason you need to add the code into your repository.  This sometimes is the case when sharing code in house and you need to make independant modifications. 
 
