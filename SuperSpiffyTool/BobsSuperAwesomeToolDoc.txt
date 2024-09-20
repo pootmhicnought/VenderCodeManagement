@@ -1,0 +1,33 @@
+This file just has a lot of text that is otherwise useless.
+Intent is to show merging of inline fixees
+and preservation of upstream fixes
+etc
+ad infinitum
+
+also, lost of spelling errors.. some will be corrected local and others in upstram, lets see how that works.
+
+So... you found this great library from Bob The Vendor, the language you use doesn't support inheritance well or for some other reason you need to add the code into your repository.  This sometimes is the case when sharing code in house and you need to make independant modifications. 
+
+Another example is third party code that comes as source AND bugs!  You can't wait for upstream to fix the bug that you discovered (because you are the only customer doing X). You decide to check in their source and then modify them.
+
+BUT WAIT! What happens when Bob fixes the bugs? Or releases a new version where the bug may be fixed?  You don't want to lose your fixes in case they don't fix it...  but you also do not want to miss out on new features.
+
+Vendor Branch Management to the RESCUE!
+
+General flow:
+
+ * Branch for vendor
+ * Add code to vendor branch
+ * PROTECT BRANCH - you do not want anyone modifying files here without oversight.
+ * Branch from vendor branch for your modifications...
+ * Merge your branch into mainline and everything is good.
+ 
+Bob release version 2
+ * checkout vendor branch
+ * commit version 2
+ * create branch from Main 
+ * rebase on vendor branch or merge wtih your changes.
+ * handle conflicts
+ * merge back to main and good to go.
+ 
+Yes, that seems like a lot of work.  However this is IMO very much worth the effort.  
